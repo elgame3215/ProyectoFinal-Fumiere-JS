@@ -1,6 +1,6 @@
 let cardsArray;
 
-fetch('../assets/cards.json')
+fetch('https://elgame3215.github.io/ProyectoFinal-Fumiere-JS/assets/cards.json')
 .then( response => response.json() )
 .then( data => {
 	cardsArray = _.shuffle(data)

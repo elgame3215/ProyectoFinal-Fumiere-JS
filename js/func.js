@@ -1,10 +1,9 @@
-function randomCard() {
-	return Math.ceil( Math.random() * 10 )
-}
-
-function renderizeLastCardFor( {cards , rol} ) {
-	const newCardElement = document.createElement( 'p' );
-	newCardElement.innerText = cards[ cards.length - 1 ];
+function renderizeLastCardFor( player ) {
+	const { cards , rol } = player,
+			newCardElement = document.createElement( 'img' );
+	newCardElement.src = cards[ cards.length - 1 ].img;
+	newCardElement.alt = cards[ cards.length - 1 ].id;
+	newCardElement.classList.add('card');
 	rol == 'main player' ? mainPlayerCardsContainer.appendChild( newCardElement ) : oponentCardsContainer.appendChild( newCardElement );
 }
 

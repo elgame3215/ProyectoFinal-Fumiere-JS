@@ -13,10 +13,10 @@ class Player {
 		return this
 	}
 	askCard = () => {
-		const newCard = randomCard();
+		const newCard = cardsArray.pop();
 		this.cards.push( newCard );
-		this.score += newCard;
-		if (newCard == 1) {
+		this.score += parseInt(newCard.value);
+		if (newCard.value == 1) {
 			this.ases++;
 			this.score += 10;
 		};

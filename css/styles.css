@@ -19,7 +19,7 @@ body {
 	border: solid 2px #111;
 }
 
-img {
+.blackjack-img {
 	position: absolute;
 	margin-top: -95px;
 	mix-blend-mode: color-burn;
@@ -32,9 +32,8 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 	60vw;
+	width: 	75vw;
 	height: 90%;
-	min-width: 400px;
 	margin-top: 125px;
 	background-color: var(--backGroundColor);
 }
@@ -68,6 +67,11 @@ img {
 .cards_container {
 	display: flex;
 	justify-content: space-around;
+}
+
+.card {
+	aspect-ratio: 0.65;
+	width: 10vw;
 }
 
 .score_container {

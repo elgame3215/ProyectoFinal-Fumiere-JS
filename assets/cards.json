@@ -1,158 +1,262 @@
 [
     {
         "id":"AC",
-        "img":"cardsImages/AC.png"},
+        "img":"assets/cardsImages/AC.png",
+		"value": "1"
+	},
     {
         "id":"AD",
-        "img":"cardsImages/AD.png"},
+        "img":"assets/cardsImages/AD.png",
+		"value": "1"
+	},
     {
         "id":"AH",
-        "img":"cardsImages/AH.png"},
+        "img":"assets/cardsImages/AH.png",
+		"value": "1"
+	},
     {
         "id":"AS",
-        "img":"cardsImages/AS.png"},
+        "img":"assets/cardsImages/AS.png",
+		"value": "1"
+	},
     {
         "id":"2C",
-        "img":"cardsImages/2C.png"},
+        "img":"assets/cardsImages/2C.png",
+		"value": "2"
+	},
     {
         "id":"2D",
-        "img":"cardsImages/2D.png"},
+        "img":"assets/cardsImages/2D.png",
+		"value": "2"
+	},
     {
         "id":"2H",
-        "img":"cardsImages/2H.png"},
+        "img":"assets/cardsImages/2H.png",
+		"value": "2"
+	},
     {
         "id":"2S",
-        "img":"cardsImages/2S.png"},
+        "img":"assets/cardsImages/2S.png",
+		"value": "2"
+	},
     {
         "id":"3C",
-        "img":"cardsImages/3C.png"},
+        "img":"assets/cardsImages/3C.png",
+		"value": "3"
+	},
     {
         "id":"3D",
-        "img":"cardsImages/3D.png"},
+        "img":"assets/cardsImages/3D.png",
+		"value": "3"
+	},
     {
         "id":"3H",
-        "img":"cardsImages/3H.png"},
+        "img":"assets/cardsImages/3H.png",
+		"value": "3"
+	},
     {
         "id":"3S",
-        "img":"cardsImages/3S.png"},
+        "img":"assets/cardsImages/3S.png",
+		"value": "3"
+	},
     {
         "id":"4C",
-        "img":"cardsImages/4C.png"},
+        "img":"assets/cardsImages/4C.png",
+		"value": "4"
+	},
     {
         "id":"4D",
-        "img":"cardsImages/4D.png"},
+        "img":"assets/cardsImages/4D.png",
+		"value": "4"
+	},
     {
         "id":"4H",
-        "img":"cardsImages/4H.png"},
+        "img":"assets/cardsImages/4H.png",
+		"value": "4"
+	},
     {
         "id":"4S",
-        "img":"cardsImages/4S.png"},
+        "img":"assets/cardsImages/4S.png",
+		"value": "4"
+	},
     {
         "id":"5C",
-        "img":"cardsImages/5C.png"},
+        "img":"assets/cardsImages/5C.png",
+		"value": "5"
+	},
     {
         "id":"5D",
-        "img":"cardsImages/5D.png"},
+        "img":"assets/cardsImages/5D.png",
+		"value": "5"
+	},
     {
         "id":"5H",
-        "img":"cardsImages/5H.png"},
+        "img":"assets/cardsImages/5H.png",
+		"value": "5"
+	},
     {
         "id":"5S",
-        "img":"cardsImages/5S.png"},
+        "img":"assets/cardsImages/5S.png",
+		"value": "5"
+	},
     {
         "id":"6C",
-        "img":"cardsImages/6C.png"},
+        "img":"assets/cardsImages/6C.png",
+		"value": "6"
+	},
     {
         "id":"6D",
-        "img":"cardsImages/6D.png"},
+        "img":"assets/cardsImages/6D.png",
+		"value": "6"
+	},
     {
         "id":"6H",
-        "img":"cardsImages/6H.png"},
+        "img":"assets/cardsImages/6H.png",
+		"value": "6"
+	},
     {
         "id":"6S",
-        "img":"cardsImages/6S.png"},
+        "img":"assets/cardsImages/6S.png",
+		"value": "6"
+	},
     {
         "id":"7C",
-        "img":"cardsImages/7C.png"},
+        "img":"assets/cardsImages/7C.png",
+		"value": "7"
+	},
     {
         "id":"7D",
-        "img":"cardsImages/7D.png"},
+        "img":"assets/cardsImages/7D.png",
+		"value": "7"
+	},
     {
         "id":"7H",
-        "img":"cardsImages/7H.png"},
+        "img":"assets/cardsImages/7H.png",
+		"value": "7"
+	},
     {
         "id":"7S",
-        "img":"cardsImages/7S.png"},
+        "img":"assets/cardsImages/7S.png",
+		"value": "7"
+	},
     {
         "id":"8C",
-        "img":"cardsImages/8C.png"},
+        "img":"assets/cardsImages/8C.png",
+		"value": "8"
+	},
     {
         "id":"8D",
-        "img":"cardsImages/8D.png"},
+        "img":"assets/cardsImages/8D.png",
+		"value": "8"
+	},
     {
         "id":"8H",
-        "img":"cardsImages/8H.png"},
+        "img":"assets/cardsImages/8H.png",
+		"value": "8"
+	},
     {
         "id":"8S",
-        "img":"cardsImages/8S.png"},
+        "img":"assets/cardsImages/8S.png",
+		"value": "8"
+	},
     {
         "id":"9C",
-        "img":"cardsImages/9C.png"},
+        "img":"assets/cardsImages/9C.png",
+		"value": "9"
+	},
     {
         "id":"9D",
-        "img":"cardsImages/9D.png"},
+        "img":"assets/cardsImages/9D.png",
+		"value": "9"
+	},
     {
         "id":"9H",
-        "img":"cardsImages/9H.png"},
+        "img":"assets/cardsImages/9H.png",
+		"value": "9"
+	},
     {
         "id":"9S",
-        "img":"cardsImages/9S.png"},
+        "img":"assets/cardsImages/9S.png",
+		"value": "9"
+	},
     {
         "id":"10C",
-        "img":"cardsImages/10C.png"},
+        "img":"assets/cardsImages/10C.png",
+		"value": "10"
+	},
     {
         "id":"10D",
-        "img":"cardsImages/10D.png"},
+        "img":"assets/cardsImages/10D.png",
+		"value": "10"
+	},
     {
         "id":"10H",
-        "img":"cardsImages/10H.png"},
+        "img":"assets/cardsImages/10H.png",
+		"value": "10"
+	},
     {
         "id":"10S",
-        "img":"cardsImages/10S.png"},
+        "img":"assets/cardsImages/10S.png",
+		"value": "10"
+	},
     {
         "id":"JC",
-        "img":"cardsImages/JC.png"},
+        "img":"assets/cardsImages/JC.png",
+		"value": "10"
+	},
     {
         "id":"JD",
-        "img":"cardsImages/JD.png"},
+        "img":"assets/cardsImages/JD.png",
+		"value": "10"
+	},
     {
         "id":"JH",
-        "img":"cardsImages/JH.png"},
+        "img":"assets/cardsImages/JH.png",
+		"value": "10"
+	},
     {
         "id":"JS",
-        "img":"cardsImages/JS.png"},
+        "img":"assets/cardsImages/JS.png",
+		"value": "10"
+	},
     {
         "id":"KC",
-        "img":"cardsImages/KC.png"},
+        "img":"assets/cardsImages/KC.png",
+		"value": "10"
+	},
     {
         "id":"KD",
-        "img":"cardsImages/KD.png"},
+        "img":"assets/cardsImages/KD.png",
+		"value": "10"
+	},
     {
         "id":"KH",
-        "img":"cardsImages/KH.png"},
+        "img":"assets/cardsImages/KH.png",
+		"value": "10"
+	},
     {
         "id":"KS",
-        "img":"cardsImages/KS.png"},
+        "img":"assets/cardsImages/KS.png",
+		"value": "10"
+	},
     {
         "id":"QC",
-        "img":"cardsImages/QC.png"},
+        "img":"assets/cardsImages/QC.png",
+		"value": "10"
+	},
     {
         "id":"QD",
-        "img":"cardsImages/QD.png"},
+        "img":"assets/cardsImages/QD.png",
+		"value": "10"
+	},
     {
         "id":"QH",
-        "img":"cardsImages/QH.png"},
+        "img":"assets/cardsImages/QH.png",
+		"value": "10"
+	},
     {
         "id":"QS",
-        "img":"cardsImages/QS.png"}
+        "img":"assets/cardsImages/QS.png",
+		"value": "10"
+	}
 ]

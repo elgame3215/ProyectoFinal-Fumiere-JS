@@ -33,7 +33,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 	75vw;
-	height: 90%;
+	height: 70%;
 	margin-top: 125px;
 	background-color: var(--backGroundColor);
 }
@@ -52,7 +52,7 @@ body {
 .interface {
 	display: flex;
 	flex-direction: column;
-	margin: 30px 50px;
+	margin: 15px 50px;
 	background-color: #999;
 	flex-grow: 1;
 	height: 45%;
@@ -70,8 +70,7 @@ body {
 }
 
 .card {
-	aspect-ratio: 0.65;
-	width: 10vw;
+	width: 8vw;
 }
 
 .score_container {

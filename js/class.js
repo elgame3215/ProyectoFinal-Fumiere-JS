@@ -44,9 +44,15 @@ class Player {
 			renderizeEndGameInterface();
 		}
 	}
-	playOponentsTurn() {
+	async playOponentsTurn() {
 		while ( oponentShouldPlay() ) {
-			oponent.askCard();
+			// el oponente pide cartas hasta ganar, pasarse o tener cuatro cartas.
+			await new Promise((resolve, reject) => {
+				setTimeout(() => {
+					// pide carta tras un corto intervalo para una mejor apreciacion visual.
+					resolve(oponent.askCard())
+				}, 700);
+			})
 		}
 		oponent.stand()
 		function oponentShouldPlay() {

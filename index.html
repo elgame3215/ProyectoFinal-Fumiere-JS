@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Preentrega 3</title>
+</head>
+<body>
+	<img src="https://dcassetcdn.com/design_img/3849510/122736/24369811/0sa7evycz1tpr68yg450e6790a_image.png" alt="">
+	<div class="main-page">
+		<div class="interfaces_container border">
+			<div class="interface border">
+				<h3 class="player-rol-text">Oponente</h3>
+				<div class="cards_container" id="oponent-cards_container">
+				</div>
+				<div class="score_container">
+					<p class="score_p" id="oponent-score"></p>
+				</div>
+			</div>
+			<div class="interface border">
+				<h3 class="player-rol-text">Jugador</h3>
+				<div class="cards_container" id="player-cards_container">
+				</div>
+				<div class="score_container">
+					<p class="score_p" id="player-score"></p>
+				</div>
+			</div>
+		</div>
+		<div class="buttons_container" id="buttons">
+			<button class="border" id="ask-card">Pedir carta</button>
+			<button class="border" id="stand">Plantarse</button>
+		</div>
+		<div class="scores_container border">
+			<h3 class="player-rol-text record_h3">HISTORIAL</h3>
+			<table class="scores-table">
+				<thead>
+					<tr class="table-row border">
+						<td>Ronda</td>
+						<td>Jugador</td>
+						<td>Oponente</td>
+					</tr>
+				</thead>
+				<tbody id="scores-table">
+				</tbody>
+			</table>
+		</div>
+		<div class="buttons_container">
+			<button class="border" id="clear-record_button">Reiniciar historial</button>
+		</div>
+	</div>
+	<script src="js/func.js"></script>
+	<script src="js/class.js"></script>
+	<script src="js/elements-references.js"></script>
+	<script src="js/instances.js"></script>
+	<script src="js/events.js"></script>
+</body>
+</html>

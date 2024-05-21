@@ -1,0 +1,124 @@
+:root {
+	--backGroundColor: #164805;
+	--redButton: #9b0000;
+	--white: #eee;
+}
+
+* {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: var(--backGroundColor);
+}
+
+.border {
+	border: solid 2px #111;
+}
+
+img {
+	position: absolute;
+	margin-top: -95px;
+	mix-blend-mode: color-burn;
+	aspect-ratio: 6/5;
+	height: 300px;
+}
+
+.main-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 	60vw;
+	height: 90%;
+	min-width: 400px;
+	margin-top: 125px;
+	background-color: var(--backGroundColor);
+}
+
+
+.interfaces_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	width: 	80%;
+	background-color: var(--white);
+}
+
+.interface {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 50px;
+	background-color: #999;
+	flex-grow: 1;
+	height: 45%;
+	width: 80%;
+}
+
+.player-rol-text {
+	display: flex;
+	justify-content: center;
+}
+
+.cards_container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.score_container {
+	display: flex;
+	justify-content: center;
+}
+
+.buttons_container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 20%;
+	width: 80%;
+	flex-grow: 1;
+	padding: 15px 0;
+}
+
+.buttons_container button {
+	display: flex;
+	min-width: 100px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--redButton);
+	color: var(--white);
+}
+
+.scores_container {
+	height: 25%;
+	width: 80%;
+	background-color: var(--white);
+}
+
+.record_h3 {
+	margin: 10px;
+}
+
+.scores-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-row {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	border-width: 1px;
+}
+
+.result-message {
+	background-color: var(--white);
+	padding: 4px;
+	text-align: center;
+}

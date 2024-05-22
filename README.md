@@ -1,5 +1,5 @@
 Blackjack:
-Este programa permite simular una partida de Blackjack contra un oponente controlado por una potente IA que fue proporcionada por el mismisimo CEO de openAI en persona especificamente para esta preentrega.
+Este programa permite simular una partida de Blackjack contra un oponente controlado por una potente IA que fue proporcionada por el mismisimo CEO de openAI en persona especificamente para este proyecto.
 
 Sigue las reglas clásicas del popular juego de cartas:
 - Cada jugador tiene un turno para pedir cartas al mazo.

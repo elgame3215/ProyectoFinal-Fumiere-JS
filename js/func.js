@@ -34,12 +34,14 @@ function renderizeEndGameInterface() {
 }
 
 function showWinner() {
-	const 	winnerElement = document.createElement('p'),
-			playerWins = ( player.score > oponent.score && player.score <= 21 ) || oponent.score > 21;
-
-    winnerElement.innerText = (playerWins) ? 'Felicitaciones, has ganado!' : 'Lo siento, has perdido.';
-	winnerElement.classList.add('result-message', 'border');
-	buttonsContainer.appendChild(winnerElement);
+	const playerWins = ( player.score > oponent.score && player.score <= 21 ) || oponent.score > 21;
+	Toastify({
+		text: playerWins ? 'Felicitaciones, has ganado!' : 'Lo siento, has perdido.',
+        duration: 3000,
+        gravity: 'bottom',
+        backgroundColor: playerWins ? '#166805' : '#bb0000',
+        stopOnFocus: true,
+	}).showToast();
 }
 
 function renderizePlayAgainButton() {

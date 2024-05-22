@@ -34,6 +34,7 @@ body {
 	align-items: center;
 	width: 	75vw;
 	height: 70%;
+	min-width: 376px;
 	margin-top: 125px;
 	background-color: var(--backGroundColor);
 }
@@ -71,6 +72,12 @@ body {
 
 .card {
 	width: 8vw;
+}
+
+@media screen and (max-width: 850px) {
+	.card {
+		width: 15vw;
+	}
 }
 
 .score_container {

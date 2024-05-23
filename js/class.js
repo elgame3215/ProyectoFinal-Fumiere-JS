@@ -32,7 +32,7 @@ class Player {
 
 		if (this.rol == 'main player') {
 			const { cards: playerCards, score: playerScore } = this,
-				playerMustStand = playerCards.length > 3 || playerScore > 21;
+				playerMustStand = playerCards.length >= MAX_CARDS_PER_PLAYER || playerScore > 20;
 			playerMustStand && askCardButton.remove();
 		}
 	}
@@ -58,7 +58,7 @@ class Player {
 		oponent.stand();
 		function oponentShouldPlay() {
 			const { cards: oponentCards } = oponent;
-			return oponent.score < player.score && player.score <= 21 && oponentCards.length < 4;
+			return oponent.score < player.score && player.score <= 21 && oponentCards.length < MAX_CARDS_PER_PLAYER;
 		}
 	}
 }

@@ -21,7 +21,7 @@ class Player {
 			this.score += 10;
 		};
 
-		renderizeLastCardFor(this)
+		renderizeLastCardFor(this);
 
 		// si el jugador se pasa de 21, verifico que tenga un as que pueda pasar a valer 1
 		if (this.ases && this.score > 21) {
@@ -38,9 +38,10 @@ class Player {
 	}
 	stand = () => {
 		if (this.rol == 'main player') {
-			this.playOponentsTurn()
+			standButton.remove();
+			this.playOponentsTurn();
 		} else {
-			saveRoundScores()
+			saveRoundScores();
 			renderizeEndGameInterface();
 		}
 	}
@@ -50,11 +51,11 @@ class Player {
 			await new Promise((resolve, reject) => {
 				setTimeout(() => {
 					// pide carta tras un corto intervalo para una mejor apreciacion visual.
-					resolve(oponent.askCard())
+					resolve(oponent.askCard());
 				}, 700);
 			})
 		}
-		oponent.stand()
+		oponent.stand();
 		function oponentShouldPlay() {
 			const { cards: oponentCards } = oponent;
 			return oponent.score < player.score && player.score <= 21 && oponentCards.length < 4;

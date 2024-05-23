@@ -1,5 +1,5 @@
 class Player {
-	constructor( rol ) {
+	constructor(rol) {
 		this.rol = rol;
 	}
 	cards = [];
@@ -14,30 +14,30 @@ class Player {
 	}
 	askCard = () => {
 		const newCard = cardsArray.pop();
-		this.cards.push( newCard );
+		this.cards.push(newCard);
 		this.score += parseInt(newCard.value);
 		if (newCard.value == 1) {
 			this.ases++;
 			this.score += 10;
 		};
 
-		renderizeLastCardFor( this )
+		renderizeLastCardFor(this)
 
 		// si el jugador se pasa de 21, verifico que tenga un as que pueda pasar a valer 1
-		if ( this.ases && this.score > 21 ) {
+		if (this.ases && this.score > 21) {
 			this.ases--;
 			this.score -= 10;
 		}
-		renderizeUpdatedScoreFor( this );
+		renderizeUpdatedScoreFor(this);
 
-		if ( this.rol == 'main player' ) {
-			const	{cards: playerCards , score: playerScore} = this,
-					playerMustStand = playerCards.length > 3 || playerScore > 21;
+		if (this.rol == 'main player') {
+			const { cards: playerCards, score: playerScore } = this,
+				playerMustStand = playerCards.length > 3 || playerScore > 21;
 			playerMustStand && askCardButton.remove();
 		}
 	}
 	stand = () => {
-		if ( this.rol == 'main player' ) {
+		if (this.rol == 'main player') {
 			this.playOponentsTurn()
 		} else {
 			saveRoundScores()
@@ -45,7 +45,7 @@ class Player {
 		}
 	}
 	async playOponentsTurn() {
-		while ( oponentShouldPlay() ) {
+		while (oponentShouldPlay()) {
 			// el oponente pide cartas hasta ganar, pasarse o tener cuatro cartas.
 			await new Promise((resolve, reject) => {
 				setTimeout(() => {
@@ -56,7 +56,7 @@ class Player {
 		}
 		oponent.stand()
 		function oponentShouldPlay() {
-			const {cards: oponentCards} = oponent;
+			const { cards: oponentCards } = oponent;
 			return oponent.score < player.score && player.score <= 21 && oponentCards.length < 4;
 		}
 	}

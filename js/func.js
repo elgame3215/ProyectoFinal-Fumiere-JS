@@ -1,3 +1,8 @@
+function initializePlayers() {
+	player.initialize();
+	oponent.initialize();
+}
+
 function renderizeLastCardFor(player) {
 	const { cards, rol } = player,
 		newCardElement = document.createElement('img');

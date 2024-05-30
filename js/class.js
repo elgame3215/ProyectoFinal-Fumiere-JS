@@ -12,8 +12,9 @@ class Player {
 		this.askCard();
 		return this
 	}
-	askCard = () => {
-		const newCard = cardsArray.pop();
+	askCard = async () => {
+		const cardsArray = await cardsArrayFetch,
+			newCard = cardsArray.pop();
 		this.cards.push(newCard);
 		this.score += parseInt(newCard.value);
 		if (newCard.value == 1) {

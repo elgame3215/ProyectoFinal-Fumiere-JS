@@ -58,8 +58,12 @@ class Player {
 		}
 		oponent.stand();
 		function oponentShouldPlay() {
-			const { cards: oponentCards } = oponent;
-			return oponent.score < player.score && player.score <= 21 && oponentCards.length < MAX_CARDS_PER_PLAYER;
+			const { cards: oponentCards, score: oponentScore } = oponent,
+				oponentIsLosing = oponent.score < player.score,
+				playerStillInGame = player.score <= 21,
+				oponentCanStand = 16 < oponentScore,
+				oponentCanAskCard = oponentCards.length < MAX_CARDS_PER_PLAYER;
+			return (oponentIsLosing && playerStillInGame && oponentCanAskCard) || !oponentCanStand;
 		}
 	}
 }

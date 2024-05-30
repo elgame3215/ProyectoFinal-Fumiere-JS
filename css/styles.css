@@ -71,13 +71,7 @@ body {
 }
 
 .card {
-	width: 8vw;
-}
-
-@media screen and (max-width: 850px) {
-	.card {
-		width: 15vw;
-	}
+	width: 20%;
 }
 
 .score_container {

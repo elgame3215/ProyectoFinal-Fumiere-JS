@@ -39,7 +39,7 @@ function renderizeEndGameInterface() {
 }
 
 function showWinner() {
-	const playerWins = (player.score > oponent.score && player.score <= 21) || oponent.score > 21;
+	const playerWins = player.score <= 21 && (oponent.score < player.score || 21 < oponent.score);
 	Toastify({
 		text: playerWins ? 'Felicitaciones, has ganado!' : 'Lo siento, has perdido.',
 		duration: 3000,

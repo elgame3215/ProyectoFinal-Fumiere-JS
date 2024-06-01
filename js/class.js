@@ -63,7 +63,7 @@ class Player {
 				playerStillInGame = player.score <= 21,
 				oponentCanStand = 16 < oponentScore,
 				oponentCanAskCard = oponentCards.length < MAX_CARDS_PER_PLAYER;
-			return (oponentIsLosing && playerStillInGame && oponentCanAskCard) || !oponentCanStand;
+			return (oponentIsLosing && playerStillInGame && oponentCanAskCard) || !oponentCanStand && oponentCanAskCard;
 		}
 	}
 }

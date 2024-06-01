@@ -43,7 +43,7 @@ function showWinner() {
 	Toastify({
 		text: playerWins ? 'Felicitaciones, has ganado!' : 'Lo siento, has perdido.',
 		duration: 3000,
-		gravity: 'bottom',
+		gravity: 'top',
 		backgroundColor: playerWins ? '#166805' : '#bb0000',
 		stopOnFocus: true,
 	}).showToast();

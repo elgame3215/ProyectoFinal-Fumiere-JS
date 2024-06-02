@@ -9,11 +9,14 @@ function renderizeLastCardFor(player) {
 	newCardElement.src = cards[cards.length - 1].img;
 	newCardElement.alt = cards[cards.length - 1].id;
 	newCardElement.classList.add('card');
-	rol == 'main player' ? mainPlayerCardsContainer.appendChild(newCardElement) : oponentCardsContainer.appendChild(newCardElement);
+	const cardsContainer = rol == 'main player' ? mainPlayerCardsContainer : oponentCardsContainer;
+	cardsContainer.appendChild(newCardElement);
 }
 
-function renderizeUpdatedScoreFor({ rol, score }) {
-	rol == 'main player' ? mainPlayerScoreElement.innerText = `Puntaje: ${score}` : oponentScoreElement.innerText = `Puntaje: ${score}`;
+function renderizeUpdatedScoreFor(player) {
+	const { rol, score } = player;
+	const scoreElement = rol == 'main player' ? mainPlayerScoreElement : oponentScoreElement;
+	scoreElement.innerText = `Puntaje: ${score}`;
 }
 
 function saveRoundScores() {

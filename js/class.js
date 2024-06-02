@@ -40,6 +40,7 @@ class Player {
 	stand = () => {
 		if (this.rol == 'main player') {
 			standButton.remove();
+			askCardButton.remove();
 			this.playOponentsTurn();
 		} else {
 			saveRoundScores();

@@ -54,7 +54,7 @@ function showWinner() {
 
 function renderizePlayAgainButton() {
 	const playAgainButton = document.createElement('button');
-	playAgainButton.classList.add('border')
+	playAgainButton.classList.add('border', 'hvr-border-fade')
 	playAgainButton.innerText = 'Volver a jugar';
 	buttonsContainer.appendChild(playAgainButton);
 	playAgainButton.addEventListener('click', () => {

@@ -17,30 +17,27 @@ class Player {
 			newCard = cardsArray.pop();
 		this.cards.push(newCard);
 		this.score += parseInt(newCard.value);
+
 		if (newCard.value == 1) {
 			this.ases++;
 			this.score += 10;
 		};
-
-		renderizeLastCardFor(this);
-
 		// si el jugador se pasa de 21, verifico que tenga un as que pueda pasar a valer 1
 		if (this.ases && this.score > 21) {
 			this.ases--;
 			this.score -= 10;
 		}
+		renderizeLastCardFor(this);
 		renderizeUpdatedScoreFor(this);
 
 		if (this.rol == 'main player') {
 			const { cards: playerCards, score: playerScore } = this,
 				playerMustStand = playerCards.length >= MAX_CARDS_PER_PLAYER || playerScore > 20;
-			playerMustStand && askCardButton.remove();
+			playerMustStand && this.playOponentsTurn();
 		}
 	}
 	stand = () => {
 		if (this.rol == 'main player') {
-			standButton.remove();
-			askCardButton.remove();
 			this.playOponentsTurn();
 		} else {
 			saveRoundScores();
@@ -48,6 +45,8 @@ class Player {
 		}
 	}
 	async playOponentsTurn() {
+		standButton.remove();
+		askCardButton.remove();
 		while (oponentShouldPlay()) {
 			// el oponente pide cartas hasta ganar, pasarse o tener cuatro cartas.
 			await new Promise((resolve, reject) => {
@@ -64,7 +63,7 @@ class Player {
 				playerStillInGame = player.score <= 21,
 				oponentCanStand = 16 < oponentScore,
 				oponentCanAskCard = oponentCards.length < MAX_CARDS_PER_PLAYER;
-			return (oponentIsLosing && playerStillInGame && oponentCanAskCard) || !oponentCanStand && oponentCanAskCard;
+			return playerStillInGame && oponentCanAskCard && (oponentIsLosing || !oponentCanStand);
 		}
 	}
 }

@@ -72,6 +72,7 @@ body {
 
 .card {
 	width: 15%;
+	box-shadow: .2em .2em .5em .05em #222;
 }
 
 .score_container {
